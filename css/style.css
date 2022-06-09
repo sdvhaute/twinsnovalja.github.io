@@ -1,0 +1,171 @@
+/*Import fonts from fonts.css file*/
+@import url(./fonts.css);
+
+/* CSS variables */
+@import url(./partials/variables.css);
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* Start Home Screen */
+
+.screen-home {
+    padding: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+    background: url(/img/imgbanneryellowflowersright.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-profile {
+    height: 250px;
+    border-radius: 50%;
+}
+
+.title-items {
+    padding: 5%;
+}
+
+.title {
+    font-family: var(--raleway);
+    font-size: 25px;
+    line-height: 15px;
+}
+
+.title-1 {
+    font-family: var(--homemade);
+    font-size: 60px;
+}
+
+
+/* End Home Screen
+
+/* Start About me */
+
+.screen-about {
+    height: 80%;
+    background-color: var(--bg-color4b);
+
+}
+
+.screen-about-box {
+    padding: 7%;
+}
+
+.items {
+    /* border: 3px solid black; */
+    padding: 3%;
+
+}
+.items:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.1);
+}
+
+
+.cont-about-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    align-items: stretch;
+    align-content: center;
+}
+
+.item-1 {
+    background-color: var(--bg-color2);
+    color: white;
+    flex-grow: 2;
+    /* flex-basis: 100%; */
+    margin: 1rem;
+}
+.card-1 {
+    font-family: var(--raleway);
+    font-size: 40px;
+    line-height: 10px;
+}
+
+/* span {
+    float: left;
+    clear: left;
+} */
+
+.item-2 {
+    background-color: var(--bg-color5);
+    color: white;
+    flex-grow: 1;
+    /* flex-basis: 100%; */
+    margin: 1rem;
+}
+.card-2 {
+    font-family: var(--shadows);
+    font-size: 30px;
+    line-height: 10px;
+    text-align: center;
+}
+
+.cont-about-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width:768px) {
+    .cont-about-2 {
+        display:flex;
+        flex-direction: column;
+        
+        align-items: stretch;
+    }
+}
+
+.item-3 {
+    background-color: var(--bg-color1);
+    /* flex-grow: 1; */
+    margin: 1rem;
+    
+}
+.card-3 {
+    font-family: var(--homemade);
+    font-size: 40px;
+    line-height: 0;
+    text-align: center;
+}
+
+.card-img {
+    max-width:400px;
+}
+
+
+.item-4 {
+    flex-grow: 1;
+    margin: 1rem;
+    padding: 0;
+
+}
+
+.item-4a {
+    background-color: var(--bg-color1);
+    margin-bottom: 1rem;
+
+}
+
+.item-4b {
+    background-color: var(--bg-color2);
+    margin-top: 1rem;
+}
+
+
+
+/* End About me */
