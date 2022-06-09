@@ -1,0 +1,14 @@
+/*Import fonts from fonts.css file*/
+@import url(./fonts.css);
+
+/* CSS variables */
+@import url(./partials/variables.css);
+
+* {
+    box-sizing: border-box;
+    background-color: black;
+}
+
+
+
+
