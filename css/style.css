@@ -6,6 +6,7 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 
@@ -150,173 +151,102 @@
 
 
 
-/* Start Pricing Panel */
-
+/* Start Content Panel */
 .screen-content {
-    line-height: 1;
     background-color: var(--color1);
+    font-family: var(--raleway);
+
+    padding: 10rem;
+
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 
-    font-family: var(--raleway);
 }
 
-ol,
-ul {
-    list-style: none;
+.content-panel {
+    background-color: #FFF;
+    border-radius: 25px;
+    padding: 40px;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+.content-panel:hover {
+    transform: scale(1.03); 
 }
 
 
-body {}
-
-.panel {
-    background-color: white;
-    border-radius: 10px;
-    padding: 15px 25px;
-    width: 100%;
-    max-width: 960px;
+.column {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+
     text-transform: uppercase;
+    color: var(--color3);
+
 }
 
-.pricing-plan {
-    border-bottom: 1px solid #e1f1ff;
+.img-content {
+    width: 250px;
+    height: auto;
+}
+.content-panel-title {
+    font-family: var(--montserrat);
+    font-size: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.pricing-plan:last-child {
-    border-bottom: none;
+.content-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
-.pricing-img {
-    margin-bottom: 25px;
-    max-width: 100%;
-}
+.content-item {
 
-.pricing-header {
-    color: #888;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
 
-.pricing-features {
-    margin: 50px 0 25px;
-    color: #016ff9;
-}
-
-.pricing-features-item {
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-size: 12px;
-    line-height: 1.5;
-    padding: 15px 0;
-    border-top: 1px solid #e1f1ff;
-}
-
-.pricing-features-item:last-child {
-    border-bottom: 1px solid #e1f1ff;
-}
-
-.pricing-price {
-    color: #016ff9;
-    display: block;
-    font-size: 32px;
-    font-weight: 700;
-}
-
-.pricing-button {
-    border: 1px solid #9dd1ff;
-    border-radius: 10px;
-    color: #348efe;
-    display: inline-block;
-    padding: 15px 35px;
-    text-decoration: none;
-    margin: 25px 0;
-    transition: background-color 200ms ease-in-out;
-}
-
-.pricing-button:hover,
-.pricing-button:focus {
-    background-color: #e1f1ff;
-}
-
-.pricing-button.is-featured {
-    background-color: #48aaff;
-    color: white;
-}
-
-.pricing-button.is-featured:hover,
-.pricing-button.is-featured:focus {
-    background-color: #269aff;
-    color: white;
+    height: 70px;
+    border-top: 2px solid var(--color5);
+    /* border-bottom: 2px solid var(--color3); */
 }
 
 
-@media (min-width: 900px) {
-    .panel {
-        flex-direction: row;
+
+ol, ul {
+	list-style: none;
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .screen-content {
     }
-
-    .pricing-plan {
-        border-bottom: none;
-        border-right: 1px solid #e1f1ff;
-        padding: 25px 50px;
-    }
-
-    .pricing-plan:last-child {
-        border-right: none;
+    .content-panel {
+        flex-direction: column;
     }
 }
+
+
+@media (max-width: 768px) {
+    .screen-content {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .content-panel {
+        flex-direction: column;
+    }
+}
+  
+    
 
 /* End Pricing Panel */
-
-
-
-
-/* Start Gallery Screen  */
-
-#img-gallery {
-    width: 30%;
-    /* margin: 1.6666666%; */
-    margin: calc(10%/6);
-}
-
-#nav-gallery {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    border-bottom: 2px solid #f1f1f1;
-    width: 30%;
-    margin-left: calc(10%/6);
-    padding: 1.2em 0;
-}
-
-/* 30 + 30 + 30
-
-10% */
-
-
-
-
-/* End Gallery Screen  */
