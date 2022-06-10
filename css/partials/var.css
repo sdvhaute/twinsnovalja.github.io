@@ -1,0 +1,22 @@
+
+/* CSS Variables */
+:root {
+    --color1: #DEEAF6;
+    --color1b: #deeaf6ea;
+    --color2: #93B1C5;
+    --color3: #737280;
+    --color4: #3D462F;
+    --color5: #D8840F;
+
+
+
+
+    --roboto: 'Roboto', sans-serif;
+    --shadows: 'Shadows Into Light', cursive;
+    --handlee: 'Handlee', cursive;
+    --montserrat: 'Montserrat', sans-serif;
+    --kdam: 'Kdam Thmor Pro', sans-serif;
+    --raleway:'Raleway', sans-serif;
+    --homemade: 'Homemade Apple', cursive;
+
+} 
