@@ -4,9 +4,20 @@
     --color1: #DEEAF6;
     --color1b: #deeaf6ea;
     --color2: #93B1C5;
+    --color2b: #93b1c5b5;
     --color3: #737280;
     --color4: #3D462F;
     --color5: #D8840F;
+
+    --color6: #8ecae6;
+    --color7: #219ebc;
+    --color8: #023047;
+    --color9: #ffb703;
+    --color9b: #ffb700;
+    --color10: #fb8500;
+    --color11: #ffbf69;
+
+
 
 
 
@@ -18,5 +29,5 @@
     --kdam: 'Kdam Thmor Pro', sans-serif;
     --raleway:'Raleway', sans-serif;
     --homemade: 'Homemade Apple', cursive;
-
+    --neucha:  'Neucha', cursive;
 } 
