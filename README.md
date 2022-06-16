@@ -24,11 +24,8 @@
  -->
 
 
-    <!-- fontsawesome icons -->
-    <link rel="stylesheet" href="/css/all.min.css">
-
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="//twinsnovalja.github.io/css/style.css">
 
 
 </head>
