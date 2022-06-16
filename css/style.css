@@ -143,7 +143,7 @@ nav {
     flex-wrap: wrap;
 }
 
-.about-row-item{
+.about-row-item {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -154,11 +154,17 @@ nav {
 #imgabout1 {
     width: 100%;
 }
+
+#imgabout2 {
+    width: 100%;
+}
+
 #about-h1 {
     font-family: var(--homemade);
     font-size: 60px;
     text-align: center;
 }
+
 #about-span {
     padding: 30px 50px;
     font-family: var(--raleway);
@@ -171,10 +177,11 @@ nav {
     .screen-about-row {
         flex-direction: column;
     }
-    
+
     .about-row-item {
         width: 100%;
     }
+
     #imgabout1 {
         display: none;
     }
@@ -184,12 +191,12 @@ nav {
     .screen-about-row {
         flex-direction: column;
     }
-    
-    
+
+
     .about-row-item {
         width: 100%;
     }
-    }
+}
 
 
 /* 
@@ -321,7 +328,7 @@ nav {
 }
 
 .content-panel {
-    
+
 
     display: flex;
     flex-direction: row;
@@ -343,6 +350,7 @@ nav {
     color: var(--color3);
 
 }
+
 .column:hover {
     transform: scale(1.05);
 }
@@ -407,10 +415,10 @@ nav {
 }
 
 
-#spanbook{
+#spanbook {
     background-color: var(--color5);
-    
-    
+
+
 
     border-radius: 20px;
 
@@ -490,7 +498,205 @@ ul {
 
 
 
-/* End Pricing Panel */
+/* End concept Panel */
+
+
+/* Start Amenities Page */
+#screen-amenities-title {
+    font-family: var(--raleway);
+    font-size: 60px;
+    /* padding-top: 50px; */
+    padding-bottom: 50px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.screen-amenities {
+    background-color: var(--color1);
+
+    padding: 5rem;
+    padding-top: 0;
+}
+
+/* .screen-amenities-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.552);
+} */
+
+.screen-amenities-row {
+    background-color: rgba(255, 255, 255, 0.552);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /* padding: 0 70px; */
+}
+
+.amenities-row-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 40px;
+    /* width: 100px; */
+}
+
+.amenities-icon {
+    width: 100px;
+    height: auto;
+    padding-bottom: 30px;
+
+}
+
+.amnities-icon-text {
+    width: 100px;
+    font-family: var(--raleway);
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* Amenities list */
+.screen-amenities-list-row {
+
+    /* background-color: rgba(255, 255, 255, 0.552); */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.screen-amenities-list-item {
+    background-color: rgba(255, 255, 255, 0.552);
+    padding: 2rem;
+
+    width: 30%;
+}
+
+.amenities-h3 {
+    padding: 2rem 0rem;
+    font-size: 22px;
+    font-family: var(--raleway);
+}
+
+.amenities-span {
+    font-size: 18px;
+    font-family: var(--raleway);
+    line-height: 30px;
+}
+
+.img-amenities-list {
+    width: 30px;
+    margin-right: 14px;
+}
+
+.amenities-icon-span {
+    position: relative;
+    bottom: 8px;
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .screen-amenities {
+        padding: 3rem;
+        padding-top: 0;
+    }
+
+    .amenities-icon {
+        width: 75px;
+        height: auto;
+        padding-bottom: 20px;
+
+    }
+
+    .amnities-icon-text {
+        width: 75px;
+        font-family: var(--raleway);
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .amenities-row-item {
+        padding: 40px;
+        /* width: 100px; */
+
+    }
+
+    .screen-amenities-list-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .screen-amenities-list-item {
+        width: 50%;
+    }
+
+    .amenities-span {
+        font-size: 16px;
+        font-family: var(--raleway);
+        line-height: 20px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .screen-amenities {
+        padding: 3rem;
+        padding-top: 0;
+    }
+
+    .amenities-icon {
+        width: 75px;
+        height: auto;
+        padding-bottom: 20px;
+
+    }
+
+    .amnities-icon-text {
+        width: 75px;
+        font-family: var(--raleway);
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .amenities-row-item {
+        padding: 40px;
+        /* width: 100px; */
+
+    }
+
+    .screen-amenities-list-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .screen-amenities-list-item {
+        width: 100%;
+    }
+
+    .amenities-span {
+        font-size: 16px;
+        font-family: var(--raleway);
+        line-height: 20px;
+    }
+}
+
+
+
+/* End Amenities Page */
 
 /* Start Gallery Screen */
 
