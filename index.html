@@ -13,9 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Handlee&family=Homemade+Apple&family=Kdam+Thmor+Pro&family=Montserrat:wght@300;400&family=Neucha&family=Raleway:wght@300;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Handlee&family=Homemade+Apple&family=Kdam+Thmor+Pro&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,800&family=Neucha&family=Raleway:wght@300;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
-
     <!-- Bootstrap Stylesheet
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
  -->
@@ -42,7 +41,7 @@
 
 
     <main>
-        <nav class="navbar">
+        <!-- <nav class="navbar">
 
             <div class="container-navbar">
                 <h1 class="navbar-brand"><a href="#homepage">Twins</a></h1>
@@ -55,16 +54,40 @@
                 </div>
 
                 <button class="hamburger is-active">
-                    <span><img src="icons/minus-white.png" alt="" class="hamburgericon" ></span>
-                    <span><img src="icons/minus-white.png" alt="" class="hamburgericon" ></span>
-                    <span><img src="icons/minus-white.png" alt="" class="hamburgericon" ></span>
+                    <span><img src="icons/minus-white.png" alt="" class="hamburgericon"></span>
+                    <span><img src="icons/minus-white.png" alt="" class="hamburgericon"></span>
+                    <span><img src="icons/minus-white.png" alt="" class="hamburgericon"></span>
 
                 </button>
-                
-            </div>
- 
-        </nav>
 
+            </div>
+
+        </nav> -->
+
+
+        <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28 " preserveAspectRatio="none">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 
+                                         58-18 88-18s
+                                         58 18 88 18 
+                                         58-18 88-18 
+                                         58 18 88 18
+                                         v44h-352z" />
+            </defs>
+            <g class="parallax1">
+                <use xlink:href="#gentle-wave" x="50" y="3" fill="#013a63" />
+            </g>
+            <g class="parallax2">
+                <use xlink:href="#gentle-wave" x="50" y="0" fill="#2a6f97" />
+            </g>
+            <g class="parallax3">
+                <use xlink:href="#gentle-wave" x="50" y="9" fill="#61a5c2" />
+            </g>
+            <g class="parallax4">
+                <use xlink:href="#gentle-wave" x="50" y="6" fill="#DEEAF6" />
+            </g>
+        </svg>
 
         <!-- Start Home Page================================================================================== -->
 
@@ -74,13 +97,19 @@
             <div class="home-page-text">
 
                 <h1 class="home-title home-title1">Welcome to</h1>
-                <h1 class="home-title home-title2">TWINS Novalja</h1>
+                <h1 class="home-title home-title2">Twins Novalja</h1>
+
+
 
             </div>
 
 
 
+
         </div>
+
+
+
 
         <!-- End Home Page================================================================================== -->
 
@@ -92,19 +121,20 @@
 
                 <div class="screen-about-row">
 
-                    <div class="about-row-item">
+                    <!-- <div class="about-row-item">
                         <img id="imgabout1" src="img/imgnovhousenight.jpg" alt="">
-                    </div>
-                    <div class="about-row-item">
-                        <h1 id="about-h1">Twins, Novalja</h1>
+                    </div> -->
+                    <div class="about-row-item about-row-item-1">
+                        <h1 id="about-h1" class="title-class">Twins, Novalja</h1>
 
-                        <span id="about-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem
+                        <span id="about-span1" class="about-span">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sed autem
                             quam
                             placeat aut
                             dignissimos non, adipisci aliquid consectetur perferendis debitis doloribus aliquam cum.
                             Odio, natus consequatur at labore alias amet!
                             Temporibus quas officia aliquam unde quam, molestias beatae numquam quaerat facilis
-                            sint,
+                            sint, <br><br>
                             necessitatibus, a quae nisi blanditiis. Necessitatibus dicta corporis vitae corrupti.
                             Quaerat, at. Perspiciatis perferendis optio magni molestias aliquid!
                             Dolorum, architecto cupiditate placeat maxime qui rem obcaecati commodi. Id delectus
@@ -117,19 +147,16 @@
                 <div id="screen-about-row2" class="screen-about-row">
 
                     <div class="about-row-item">
-                        <span id="about-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem
-                            quam
-                            placeat aut
-                            dignissimos non, adipisci aliquid consectetur perferendis debitis doloribus aliquam cum.
+                        <span id="about-span2" class="about-span">issimos non, adipisci aliquid consectetur perferendis
+                            debitis doloribus
+                            aliquam cum.
                             Odio, natus consequatur at labore alias amet!
                             Temporibus quas officia aliquam unde quam, molestias beatae numquam quaerat facilis
-                            sint,
+                            sint,<br><br>
                             necessitatibus, a quae nisi blanditiis. Necessitatibus dicta corporis vitae corrupti.
                             Quaerat, at. Perspiciatis perferendis optio magni molestias aliquid!
                             Dolorum, architecto cupiditate placeat maxime qui rem obcaecati commodi. Id delectus
-                            facilis
-                            nam ab, commodi impedit expedita explicabo distinctio quaerat totam natus perspiciatis,
-                            odio, illum unde non corrupti quod similique.</span>
+                            facilis.</span>
                     </div>
                     <div class="about-row-item">
 
@@ -153,13 +180,11 @@
 
             <!-- Start Concept Page================================================================================== -->
 
-
-
             <div id="concept" class="screen-concept">
 
                 <div class="screen-concept-intro">
-
-                    <H1 id="screen-concept-title">The Twins Concept</H1>
+                    <hr>
+                    <H1 id="screen-concept-title" class="title-class">The Twins Concept</H1>
                     <p id="screen-concept-text">Twins is a villa that is split into two seperate fully equiped twin
                         houses
                         with a shared garden and parking lot, but with seperate enterances. </p>
@@ -173,16 +198,13 @@
 
                         <div class="column">
                             <img src="img/imgnovhome.jpg" alt="" class="img-content">
-                            <h2 class="content-panel-title">Twins</h2>
+                            <h2 class="content-panel-title title-class">Twins</h2>
                             <ul class="content-list">
-                                <li class="content-item content-item-1">4 Master Bedrooms, 2 Double Bedrooms, 2
-                                    Double
-                                    Sofabeds
+                                <li class="content-item content-item-1">4 Master Bedrooms, <br class="br-big">2 Double
+                                    Bedrooms, <br class="br-big">2 Double Sofabeds
                                 </li>
-                                <li class="content-item content-item-2">2 Luxury kitchens, 2 Bathrooms with shower,
-                                    2
-                                    Bathrooms
-                                    with bath</li>
+                                <li class="content-item content-item-2">2 Luxury kitchens, <br class="br-big">2
+                                    Bathrooms with shower, <br class="br-big">2 Bathrooms with bath</li>
                                 <li class="content-item content-item-3">Private Swimming Pool</li>
                             </ul>
 
@@ -191,12 +213,14 @@
                         </div>
                         <div class="column">
                             <img src="img/imgnovlivingleft.JPG" alt="" class="img-content">
-                            <h2 class="content-panel-title">Twin #18</h2>
+                            <h2 class="content-panel-title title-class">Twin #18</h2>
                             <ul class="content-list">
-                                <li class="content-item content-item-1">2 Master Bedroom, 1 Double Bedroom, 1 Double
+                                <li class="content-item content-item-1">2 Master Bedrooms, <br class="br-big">1 Double
+                                    Bedroom, <br class="br-big">1 Double
                                     Sofabeds
                                 </li>
-                                <li class="content-item content-item-2">Luxury kitchen, 1 Bathroom with shower, 1
+                                <li class="content-item content-item-2">Luxury kitchen, <br class="br-big">1 Bathroom
+                                    with shower, <br class="br-big">1
                                     Bathroom
                                     with bath</li>
                                 <li class="content-item content-item-3">Shared Swimming Pool</li>
@@ -213,12 +237,14 @@
 
                         <div class="column">
                             <img src="img/imgnovlivingright.jpg" alt="" class="img-content">
-                            <h2 class="content-panel-title">Twin #20</h2>
+                            <h2 class="content-panel-title title-class">Twin #20</h2>
                             <ul class="content-list">
-                                <li class="content-item content-item-1">2 Master Bedroom, 1 Double Bedroom, 1 Double
+                                <li class="content-item content-item-1">2 Master Bedrooms, <br class="br-big">1 Double
+                                    Bedroom, <br class="br-big">1 Double
                                     Sofabeds
                                 </li>
-                                <li class="content-item content-item-2">Luxury kitchen, 1 Bathroom with shower, 1
+                                <li class="content-item content-item-2">Luxury kitchen, <br class="br-big">1 Bathroom
+                                    with shower, <br class="br-big">1
                                     Bathroom
                                     with bath</li>
                                 <li class="content-item content-item-3">Share Swimming Pool</li>
@@ -245,7 +271,7 @@
 
             <div id="utilities" class="screen-amenities">
 
-                <H1 id="screen-amenities-title">Amenities & Utilities</H1>
+                <H1 id="screen-amenities-title" class="title-class">What makes twins unique?</H1>
 
                 <div class="screen-amenities-column">
                     <div class="screen-amenities-row">
@@ -265,14 +291,14 @@
                             <img class="amenities-icon" src="icons/beach.png" alt="">
                             <span class="amnities-icon-text">3 minute walk to the beach</span>
                         </div>
-                        <div class="amenities-row-item">
+                        <!-- <div class="amenities-row-item">
                             <img class="amenities-icon" src="icons/restaurant.png" alt="">
                             <span class="amnities-icon-text">Close to restaurants, pubs and shops</span>
                         </div>
                         <div class="amenities-row-item">
                             <img class="amenities-icon" src="icons/air-conditioning.png" alt="">
                             <span class="amnities-icon-text">Air-conditioning in all rooms</span>
-                        </div>
+                        </div> -->
 
                     </div>
 
@@ -372,7 +398,6 @@
             <!-- End Amenities Page -->
 
 
-
             <!-- Start Gallery Screen ================================================================================== -->
 
 
@@ -380,7 +405,7 @@
 
                 <div class="gallery-screen-intro">
 
-                    <H1 id="screen-gallery-title">Gallery</H1>
+                    <H1 id="screen-gallery-title" class="title-class">Gallery</H1>
                     <H1 id="screen-gallery-subtitle">Shared Spaces</H1>
 
                 </div>

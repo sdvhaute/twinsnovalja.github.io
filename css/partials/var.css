@@ -17,17 +17,19 @@
     --color10: #fb8500;
     --color11: #ffbf69;
 
-
-
-
+    --colortext: #1d3557;
+    --colortext2: #fff;
 
 
     --roboto: 'Roboto', sans-serif;
     --shadows: 'Shadows Into Light', cursive;
     --handlee: 'Handlee', cursive;
     --montserrat: 'Montserrat', sans-serif;
+    --montserratbold:'Montserrat', bold;
+    --montserratsubrayada: 'Montserrat Subrayada', sans-serif;
     --kdam: 'Kdam Thmor Pro', sans-serif;
     --raleway:'Raleway', sans-serif;
     --homemade: 'Homemade Apple', cursive;
     --neucha:  'Neucha', cursive;
+
 } 
