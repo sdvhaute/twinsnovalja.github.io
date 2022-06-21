@@ -40,119 +40,15 @@ a {
 
 
 /* Start Navbar */
+header {
+    position:absolute;
 
-.navbar {
-    background-color: var(--color2b);
-    text-decoration: none;
+    width: 100%;
 
+    background-color: none;
 
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-
-    padding: 10px 25px;
-    border-bottom: 3px solid rgba(255, 255, 255, 0.501);
-}
-
-.container-navbar {
-    max-width: 1100px;
-    margin: 0 auto;
-
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.hamburger {
-    padding: 3px;
-
-    display: none;
-
-    position: relative;
-    z-index: 1;
-
-    user-select: none;
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
-    cursor: pointer;
 
 }
-
-.hamburger:hover span:nth-child(1) {
-    transform: translateX(-10px);
-    transition: 2s;
-}
-
-.hamburger:hover span:nth-child(3) {
-    transform: translateX(10px);
-    transition: 2s;
-}
-
-.navbar-brand {
-    display: none;
-}
-
-.navbar-brand a {
-    font-size: 40px;
-    font-family: var(--raleway);
-    text-transform: uppercase;
-    color: #FFF;
-}
-
-.navbar-menu a {
-    font-size: 20px;
-    font-family: var(--raleway);
-    text-transform: uppercase;
-    color: #FFF;
-    padding: 0 20px;
-    transition: 0.5s;
-
-}
-
-.navbar-menu a:hover {
-    background-color: var(--color9);
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-
-
-@media (min-width: 481px) and (max-width: 768px) {
-
-    .container-navbar {
-        align-items: baseline;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .navbar-menu {
-        display: none;
-    }
-}
-
-@media (max-width:480px) {
-    .container-navbar {
-        align-items: baseline;
-    }
-
-    .hamburger span {
-        display: block;
-
-    }
-
-    .navbar-menu {
-        display: none;
-    }
-}
-
 
 /* End Navbar */
 
@@ -279,7 +175,7 @@ a {
 .about-span {
     padding: 30px 50px;
     font-family: var(--montserrat);
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -490,7 +386,7 @@ a {
 }
 
 #spanbook:hover {
-    background-color: var(--color4);
+    background-color: var(--color8);
     /* transform: scale(1.2); */
 }
 
@@ -566,7 +462,8 @@ ul {
 
 /* Start Amenities Page */
 #screen-amenities-title {
-    padding-bottom: 50px;
+    padding-top: 3%;
+    padding-bottom: 3%;
     text-align: center;
     text-decoration: none;
 
@@ -937,3 +834,15 @@ ul {
 
 
 /* End row divider */
+
+
+
+/* Start Footer */
+
+footer {
+    margin: 0;
+    background-color: var(--color1);
+}
+
+
+/* End Footer */
