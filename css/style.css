@@ -13,8 +13,9 @@ body {
     color: var(--colortext);
 
 }
+
 body {
-    
+
     background-color: var(--bgcolor1);
 }
 
@@ -44,29 +45,27 @@ a {
 }
 
 
+
 /* Start Navbar */
+
+
 .nav {
-    background-color: rgba(255, 255, 255, 0.019);
-    padding: 10px 7%;
     font-size: 1rem;
     height: 10vh;
 
     position: fixed;
     z-index: 99999;
     width: 100vw;
+}
 
+.navbar-collapse {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
+    justify-content: end;
+    
+}
 
-  .nav-menu {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .nav-link {
+.nav-link {
     font-family: var(--montserratbold);
     font-size: 18px;
     font-weight: 900;
@@ -78,27 +77,44 @@ a {
 
     border: 2px solid #FFF;
     border-radius: 25px;
-  }
+}
 
-  .nav-link:hover {
+.nav-link:hover {
     color: #FFF;
     background-color: var(--color9);
     transform: scale(1.1);
     transition: 1s;
-  }
+}
 
-  #nav-home-button {
+#nav-home-button {
     display: none;
-  }
+}
 
 
-  #nav-book {
+#nav-book {
     background-color: var(--color9);
-  }
+}
 
+.navbar-toggler-icon {
+    background-image: url(/icons/menu-open.png);
+}
+
+@media (min-width: 481px) and (max-width: 1000px) {
+    .nav-menu {
+        display: none;
+    }
+
+}
+
+@media (max-width:480px) {
+    .nav-menu {
+        display: none;
+    }
+
+
+}
 
 /* End Navbar */
-
 
 
 /* Start Home Screen */
@@ -115,7 +131,7 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
- 
+
 
 }
 
@@ -585,6 +601,7 @@ ul {
         padding: 3%;
         padding-top: 0;
     }
+
     .amenities-icon {
         width: 75px;
         height: auto;
@@ -629,7 +646,7 @@ ul {
         padding: 3%;
         padding-top: 0;
     }
-    
+
     .amenities-icon {
         width: 75px;
         height: auto;
@@ -790,10 +807,12 @@ ul {
     background-color: var(--bgcolor1);
     height: 60px;
 }
+
 .svg-block2 {
     background-color: var(--bgcolor2);
     height: 60px;
 }
+
 .svg-block3 {
     background-color: var(--bgcolor1);
     height: 60px;
