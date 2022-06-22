@@ -579,7 +579,7 @@ ul {
 .amenities-span {
     font-size: 18px;
     font-family: var(--raleway);
-    line-height: 30px;
+    line-height: 50px;
 }
 
 .img-amenities-list {
@@ -587,10 +587,6 @@ ul {
     margin-right: 14px;
 }
 
-.amenities-icon-span {
-    position: relative;
-    bottom: 8px;
-}
 
 
 
@@ -635,7 +631,7 @@ ul {
     .amenities-span {
         font-size: 16px;
         font-family: var(--raleway);
-        line-height: 20px;
+        line-height: 40px;
     }
 
 }
@@ -680,7 +676,7 @@ ul {
     .amenities-span {
         font-size: 16px;
         font-family: var(--raleway);
-        line-height: 20px;
+        line-height: 40px;
     }
 
 }
