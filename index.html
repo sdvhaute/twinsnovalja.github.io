@@ -56,6 +56,9 @@
                         <a href="#gallery" class="nav-link">Gallery</a>
                     </li>
                     <li class="nav-item">
+                        <a href="#screen-contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
                         <a id="nav-book" target="_blank" class="nav-link"
                             href="https://www.airbnb.nl/rooms/644864787965752366?adults=8&check_in=2023-05-12&check_out=2023-05-19&federated_search_id=ee2e3bcc-5d61-4df9-a466-6a7c4d60187f&source_impression_id=p3_1655213869_q2VWUzwlczUauYZJ&guests=8">BOOK</a>
                     </li>
@@ -335,24 +338,28 @@
                                     <li> <img src="icons/foldable-drying-rack.png" alt="" class="img-amenities-list">
                                         <span class="amenities-icon-span"> Clothes drying rack</span>
                                     </li>
-                                    <li> <img src="icons/bath-tub.png" alt="" class="img-amenities-list">
-                                        <span class="amenities-icon-span"> Bathroom with bathtub</span>
-                                    </li>
-                                    <li> <img src="icons/hair-dryer.png" alt="" class="img-amenities-list">
-                                        <span class="amenities-icon-span"> Hairdryer</span>
-                                    </li>
                                     <li> <img src="icons/ironing-board.png" alt="" class="img-amenities-list">
                                         <span class="amenities-icon-span"> Iron and ironingboard</span>
-                                    </li>
-                                    <li> <img src="icons/towels.png" alt="" class="img-amenities-list">
-                                        <span class="amenities-icon-span"> Bedlinnen and towels</span>
-                                    </li>
-                                    <li> <img src="icons/window.png" alt="" class="img-amenities-list">
-                                        <span class="amenities-icon-span"> Room darkening shades</span>
                                     </li>
                                     <li> <img src="icons/vacuum.png" alt="" class="img-amenities-list">
                                         <span class="amenities-icon-span">Cleaning supplies</span>
                                     </li>
+                                    <li> <img src="icons/bath-tub.png" alt="" class="img-amenities-list">
+                                        <span class="amenities-icon-span"> Bathroom with bathtub</span>
+                                    </li>
+                                    <li> <img src="icons/bath-tub.png" alt="" class="img-amenities-list">
+                                        <span class="amenities-icon-span"> Bathroom with shower</span>
+                                    </li>
+                                    <li> <img src="icons/hair-dryer.png" alt="" class="img-amenities-list">
+                                        <span class="amenities-icon-span"> Hairdryer</span>
+                                    </li>
+                                    <li> <img src="icons/towels.png" alt="" class="img-amenities-list">
+                                        <span class="amenities-icon-span"> Bedlinnen and towels</span>
+                                    </li>
+                                    <li> <img src="icons/shade.png" alt="" class="img-amenities-list">
+                                        <span class="amenities-icon-span"> Room darkening shades</span>
+                                    </li>
+
                                 </ul>
                             </span>
                         </div>
@@ -375,7 +382,6 @@
                                     <li> <img src="icons/coffee-machine.png" alt="" class="img-amenities-list">
                                         <span class="amenities-icon-span"> Nespresso machine and kettle</span>
                                     </li>
-
                                 </ul>
                             </span>
                         </div>
@@ -383,11 +389,14 @@
                             <H3 class="amenities-h3">Other utilities</H3>
                             <span class="amenities-span">
                                 <ul>
+                                    <li> <img src="icons/air-conditioning.png" alt="" class="img-amenities-list">
+                                        <span class="amenities-icon-span"> All rooms equiped with airco</span>
+                                    </li>
                                     <li> <img src="icons/shower.png" alt="" class="img-amenities-list">
                                         <span class="amenities-icon-span"> Outdoor showers and toilet</span>
                                     </li>
                                     <li> <img src="icons/mosquito.png" alt="" class="img-amenities-list">
-                                        <span class="amenities-icon-span"> Rooms equiped mosquito nets</span>
+                                        <span class="amenities-icon-span"> Rooms equiped with mosquito nets</span>
                                     </li>
                                     <li> <img src="icons/smart-tv.png" alt="" class="img-amenities-list">
                                         <span class="amenities-icon-span"> Smart tv (Netflix, Youtube, ...)</span>
@@ -558,13 +567,83 @@
 
             </div>
 
-
-
-
-
-
-
             <!-- End Gallery Screen ================================================================================== -->
+
+
+            <svg class="editorial-fixed1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28 " preserveAspectRatio="none">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 
+                                     58-18 88-18s
+                                     58 18 88 18 
+                                     58-18 88-18 
+                                     58 18 88 18    
+                                     v44h-352z" />
+                </defs>
+                <g class="parallax1">
+                    <use xlink:href="#gentle-wave" x="50" y="3" fill="#DEEAF6" />
+                </g>
+
+            </svg>
+
+
+            <!-- Start Contact Form Screen =========================================================================== -->
+
+            <div id="screen-contact">
+
+                <div class="svg-block2"></div>
+
+                <div class="screen-contact-intro">
+
+                    <H1 id="screen-contact-title" class="title-class">Any questions?</H1>
+                    <p id="screen-concept-text">Do you have any questions, don't hesitate to contact us! <br>
+                        You can write to us in English, German, French, Dutch and Croatian. </p>
+
+                </div>
+
+                <div class="screen-contact-row">
+
+                    <div class="screen-contact-item1">
+                        <img id="contact-image" src="img/imgnovaboutolivetree.jpg" alt="">
+                    </div>
+
+                    <div class="screen-contact-item2">
+                        <div class="container-contact-form">
+                            <form action="action_page.php">
+
+                                <label for="fname">First & Last Name</label>
+                                <input type="text" id="fname" name="name" placeholder="Your name..">
+                                
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your email..">
+                                
+                                <label for="phone">Phonenumber</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Your phonenumber..">
+
+                                <label for="subject">Subject</label>
+                                <textarea id="subject" name="subject" placeholder="Write something.."
+                                    style="height:150px"></textarea>
+
+                                <input id="spanbook nav-book" type="submit" value="Submit" class="nav-link">
+
+
+                            </form>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- End Contact Form Screen =========================================================================== -->
+
+
 
             <footer>
                 <hr>
