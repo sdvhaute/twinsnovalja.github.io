@@ -829,7 +829,7 @@ input[type=submit] {
 
 .container-contact-form {
     border-radius: 5px;
-    background-color: var(--bgcolor3);
+    background-color: var(--bgcolor2);
     padding: 20px;
 }
 

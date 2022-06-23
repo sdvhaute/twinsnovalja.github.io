@@ -1,0 +1,17 @@
+/*Import fonts from fonts.css file*/
+@import url(fonts.css);
+
+/* CSS variables */
+@import url(partials/var.css);
+
+
+body {
+    background-color: var(--colortext);
+    color: var(--color11);
+
+    font-family: var(--montserratbold);
+    font-weight: 900;
+    font-size: 70px;
+    text-align: center;
+
+}

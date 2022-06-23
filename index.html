@@ -595,7 +595,7 @@
 
                 <div class="screen-contact-intro">
 
-                    <H1 id="screen-contact-title" class="title-class">Any questions?</H1>
+                    <H1 id="screen-contact-title" class="title-class">Get in touch!</H1>
                     <p id="screen-concept-text">Do you have any questions, don't hesitate to contact us! <br>
                         You can write to us in English, German, French, Dutch and Croatian. </p>
 
@@ -609,25 +609,33 @@
 
                     <div class="screen-contact-item2">
                         <div class="container-contact-form">
-                            <form action="action_page.php">
+
+
+                            <form action="https://formsubmit.co/499f036bf3e0655e080e2322a82351c7" method="POST">
+
+                                <input type="hidden" name="_subject" value="New email from twinsnovalja.be!">
 
                                 <label for="fname">First & Last Name</label>
-                                <input type="text" id="fname" name="name" placeholder="Your name..">
-                                
+                                <input type="text" id="fname" name="name" placeholder="Your name" required>
+
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Your email..">
-                                
+                                <input type="email" id="email" name="email" placeholder="Your email" required>
+
                                 <label for="phone">Phonenumber</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Your phonenumber..">
+                                <input type="tel" id="phone" name="phone" placeholder="Your phonenumber">
 
                                 <label for="subject">Subject</label>
-                                <textarea id="subject" name="subject" placeholder="Write something.."
-                                    style="height:150px"></textarea>
+                                <textarea id="subject" name="subject" placeholder="How can we help you?" required
+                                    rows="5"></textarea>
 
-                                <input id="spanbook nav-book" type="submit" value="Submit" class="nav-link">
+                                <input id="spanbook nav-book" type="submit" value="Send" target="_blank"
+                                    class="nav-link">
+                                <input type="hidden" name="_next" value="https://twinsnovalja.be/formthanks.html"
+                                    target="_blank">
 
 
                             </form>
+
                         </div>
 
                     </div>
@@ -640,14 +648,8 @@
 
             </div>
 
-
             <!-- End Contact Form Screen =========================================================================== -->
 
-
-
-            <footer>
-                <hr>
-            </footer>
 
     </main>
 
@@ -666,6 +668,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <!-- Link to SMTP JS to send form through email -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+
+        function sendEmail() {
+            Email.send({
+                SecureToken: "0ee25a1c-1234-4e2c-96f6-8b1b83a4415a",
+                To: 'sdvhaute@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form Enquiry",
+                Body: "And this is the body"
+            }).then(
+                message => alert("Message sent Succesfully!")
+            );
+
+        }
+
+    </script>
 
 </body>
 
