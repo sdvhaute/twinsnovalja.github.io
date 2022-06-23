@@ -14,6 +14,11 @@ body {
 
 }
 
+::selection { 
+    background: var(--color9);
+    color: #FFF;
+}
+
 body {
 
     background-color: var(--bgcolor1);
@@ -848,7 +853,8 @@ label {
     .screen-contact-item1 {
         display: none;
     }
-    .container-contact-form  {
+
+    .container-contact-form {
         position: relative;
         top: 0;
         right: 0;
@@ -857,12 +863,12 @@ label {
         max-width: 700px;
 
         margin: 0 5%;
-        
+
     }
 
     .screen-contact-row {
         justify-content: center;
-    
+
     }
 
 }
@@ -974,6 +980,11 @@ label {
     }
 }
 
+@media (max-width: 481px) {
+    .editorial {
+        display: none;
+    }
+}
 
 /* End row divider */
 
