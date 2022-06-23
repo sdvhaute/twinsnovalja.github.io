@@ -630,7 +630,7 @@
 
                                 <input id="spanbook nav-book" type="submit" value="Send" target="_blank"
                                     class="nav-link">
-                                <input type="hidden" name="_next" value="https://twinsnovalja.github.io/formthanks.html"
+                                <input type="hidden" name="_next" value="formthanks.html"
                                     target="_blank">
 
 
@@ -669,24 +669,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-    <!-- Link to SMTP JS to send form through email -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
 
-        function sendEmail() {
-            Email.send({
-                SecureToken: "0ee25a1c-1234-4e2c-96f6-8b1b83a4415a",
-                To: 'sdvhaute@gmail.com',
-                From: document.getElementById("email").value,
-                Subject: "New Contact Form Enquiry",
-                Body: "And this is the body"
-            }).then(
-                message => alert("Message sent Succesfully!")
-            );
-
-        }
-
-    </script>
 
 </body>
 
