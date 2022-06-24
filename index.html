@@ -17,9 +17,9 @@
         href="https://fonts.googleapis.com/css2?family=Handlee&family=Homemade+Apple&family=Kdam+Thmor+Pro&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,800&family=Neucha&family=Raleway:wght@300;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
     <!-- Bootstrap Stylesheet-->
-
+    <!-- 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 
 
     <!-- fontsawesome icons -->
@@ -34,7 +34,24 @@
 <!-- Start NavBar with CSS only -->
 <header>
 
-    <nav class="nav navbar navbar-expand-lg">
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo title-class"></div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li class="nav-item"><a class="nav-link" href="#aboutlink">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#concept">Concept</a></li>
+                <li class="nav-item"><a class="nav-link" href="#utilities">Utilities</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#screen-contact">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- <nav class="nav navbar navbar-expand-lg">
         <div class="container-fluid  ">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +84,7 @@
             </div>
 
         </div>
-    </nav>
+    </nav> -->
 </header>
 <!-- End NavBar with CSS only -->
 
@@ -213,6 +230,9 @@
 
                             <span id="person-count"> 12 (+4) persons</span>
 
+                            <span id="spanbook"><a id="nav-book" class="nav-link" href="#screen-contact">Contact us</a>
+                            </span>
+
                         </div>
                         <div class="column">
                             <img src="img/imgnovlivingleft.JPG" alt="" class="img-content">
@@ -304,7 +324,7 @@
                             </div>
                             <div class="amenities-row-item">
                                 <img class="amenities-icon" src="icons/terrace.png" alt="">
-                                <span class="amnities-icon-text">South-oriented 20mm terrace</span>
+                                <span class="amnities-icon-text">South-oriented 20sqm terrace</span>
                             </div>
                             <div class="amenities-row-item">
                                 <img class="amenities-icon" src="icons/parking.png" alt="">
@@ -314,14 +334,14 @@
                                 <img class="amenities-icon" src="icons/beach.png" alt="">
                                 <span class="amnities-icon-text">3 minute walk to the beach</span>
                             </div>
+                            <div class="amenities-row-item">
+                                <img class="amenities-icon" src="icons/restaurant.png" alt="">
+                                <span class="amnities-icon-text">Close to restaurants, pubs and shops</span>
+                            </div>
                             <!-- <div class="amenities-row-item">
-                            <img class="amenities-icon" src="icons/restaurant.png" alt="">
-                            <span class="amnities-icon-text">Close to restaurants, pubs and shops</span>
-                        </div>
-                        <div class="amenities-row-item">
                             <img class="amenities-icon" src="icons/air-conditioning.png" alt="">
                             <span class="amnities-icon-text">Air-conditioning in all rooms</span>
-                        </div> -->
+                            </div> -->
 
                         </div>
 
@@ -396,10 +416,10 @@
                                         <span class="amenities-icon-span"> Outdoor showers and toilet</span>
                                     </li>
                                     <li> <img src="icons/mosquito.png" alt="" class="img-amenities-list">
-                                        <span class="amenities-icon-span"> Rooms equiped with mosquito nets</span>
+                                        <span class="amenities-icon-span"> All windows with mosquito nets</span>
                                     </li>
                                     <li> <img src="icons/smart-tv.png" alt="" class="img-amenities-list">
-                                        <span class="amenities-icon-span"> Smart tv (Netflix, Youtube, ...)</span>
+                                        <span class="amenities-icon-span"> Smart tv (Netflix, Youtube, ... )</span>
                                     </li>
                                     <li> <img src="icons/wifi-signal.png" alt="" class="img-amenities-list">
                                         <span class="amenities-icon-span"> WIFI</span>
@@ -408,7 +428,7 @@
                                         <span class="amenities-icon-span"> Spacious terrace and balcony</span>
                                     </li>
                                     <li> <img src="icons/security-camera.png" alt="" class="img-amenities-list">
-                                        <span class="amenities-icon-span"> Security cameras on entrances</span>
+                                        <span class="amenities-icon-span"> Security cameras</span>
                                     </li>
 
                                 </ul>
@@ -612,26 +632,26 @@
 
 
                             <form action="https://formsubmit.co/499f036bf3e0655e080e2322a82351c7" method="POST">
+                                <div class="container-form-fields">
+                                    <input type="hidden" name="_subject" value="New email from twinsnovalja.be!">
 
-                                <input type="hidden" name="_subject" value="New email from twinsnovalja.be!">
+                                    <label class="lineheight-contact" for="fname">First & Last Name</label>
+                                    <input class="lineheight-contact" type="text" id="fname" name="name" placeholder="Your name" required>
 
-                                <label for="fname">First & Last Name</label>
-                                <input type="text" id="fname" name="name" placeholder="Your name" required>
+                                    <label class="lineheight-contact" for="email">Email</label>
+                                    <input class="lineheight-contact" type="email" id="email" name="email" placeholder="Your email" required>
 
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Your email" required>
+                                    <label class="lineheight-contact" for="phone">Phonenumber</label>
+                                    <input class="lineheight-contact" type="tel" id="phone" name="phone" placeholder="Your phonenumber">
 
-                                <label for="phone">Phonenumber</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Your phonenumber">
+                                    <label class="lineheight-contact" for="subject">Subject</label>
+                                    <textarea class="lineheight-contact" id="subject" name="subject" placeholder="How can we help you?" required
+                                        rows="5"></textarea>
 
-                                <label for="subject">Subject</label>
-                                <textarea id="subject" name="subject" placeholder="How can we help you?" required
-                                    rows="5"></textarea>
+                                    <input id="spanbook nav-book" type="submit" value="Send" target="_blank"
+                                        class="nav-link">
 
-                                <input id="spanbook nav-book" type="submit" value="Send" target="_blank"
-                                    class="nav-link">
-                                
-
+                                </div>
                             </form>
 
                         </div>
@@ -650,32 +670,32 @@
 
 
             <svg id="aboutlink" class="editorial-fixed-end" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-            <defs>
-                <path id="gentle-wave" d="M-160 44c30 0 
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 
                                          58-18 88-18s
                                          58 18 88 18 
                                          58-18 88-18 
                                          58 18 88 18
                                          v44h-352z" />
-            </defs>
-            <g class="parallax1">
-                <use xlink:href="#gentle-wave" x="50" y="3" fill="#013a63" />
-            </g>
-            <g class="parallax2">
-                <use xlink:href="#gentle-wave" x="50" y="0" fill="#2a6f97" />
-            </g>
-            <g class="parallax3">
-                <use xlink:href="#gentle-wave" x="50" y="9" fill="#61a5c2" />
-            </g>
-            <g class="parallax4">
-                <use xlink:href="#gentle-wave" x="50" y="6" fill="#219ebc" />
-            </g>
-        </svg>
+                </defs>
+                <g class="parallax1">
+                    <use xlink:href="#gentle-wave" x="50" y="3" fill="#013a63" />
+                </g>
+                <g class="parallax2">
+                    <use xlink:href="#gentle-wave" x="50" y="0" fill="#2a6f97" />
+                </g>
+                <g class="parallax3">
+                    <use xlink:href="#gentle-wave" x="50" y="9" fill="#61a5c2" />
+                </g>
+                <g class="parallax4">
+                    <use xlink:href="#gentle-wave" x="50" y="6" fill="#219ebc" />
+                </g>
+            </svg>
 
-        
+
     </main>
-    
+
 
 
 

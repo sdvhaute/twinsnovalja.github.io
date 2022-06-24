@@ -14,7 +14,7 @@ body {
 
 }
 
-::selection { 
+::selection {
     background: var(--color9);
     color: #FFF;
 }
@@ -42,11 +42,12 @@ body {
     }
 }
 
-
-
-
 a {
     text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 
@@ -54,31 +55,63 @@ a {
 /* Start Navbar */
 
 
-.nav {
+nav {
     font-size: 1rem;
-    height: 10vh;
+    height: fit-content;
 
     position: fixed;
     z-index: 99999;
     width: 100vw;
+
+    /* background-color: var(--bgcolor2); */
+
+    color: var(--colortext);
+
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    min-height: 70px;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+/* LOGO */
+.logo {
+    color: #FFF;
+    font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    font-size: 18px;
+}
+
+
+/* 
 .navbar-collapse {
     display: flex;
     flex-direction: row;
     justify-content: end;
 
 }
-
+ */
 .nav-link {
     font-family: var(--montserratbold);
     font-size: 18px;
     font-weight: 900;
     text-transform: uppercase;
     color: #FFF;
-    background-color: rgba(0, 0, 0, 0.201);
+    background-color: rgba(0, 0, 0, 0.534);
 
     margin: 0 10px;
+    padding: 10px;
 
     border: 2px solid #FFF;
     border-radius: 25px;
@@ -87,37 +120,74 @@ a {
 .nav-link:hover {
     color: #FFF;
     background-color: var(--color9);
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: 1s;
 }
-
-#nav-home-button {
-    display: none;
-}
-
 
 #nav-book {
     background-color: var(--color9);
 }
 
-.navbar-toggler-icon {
-    background-image: url(/icons/menu-open.png);
+/*RESPONSIVE NAVBAR MENU STARTS*/
+input[type=checkbox] {
+    display: none;
 }
 
-@media (min-width: 481px) and (max-width: 1000px) {
-    .nav-menu {
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+
+@media (max-width: 768px) {
+
+    nav{
+        background-color: var(--bgcolor2);
+    }
+
+    .menu {
         display: none;
+        position: absolute;
+        background-color: var(--bgcolor2);
+        right: 0;
+        left: 0;
+        text-align: end;
+        padding: 16px 0;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-link {
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        border-radius: none;
+    }
+
+    .nav-link:hover {
+        color: #FFF;
+        background-color: var(--color9);
+        transform: scale(1.2);
+        transition: 1s;
+    }
+
+    #nav-book {
+        background-color: var(--color9);
     }
 
 }
 
-@media (max-width:480px) {
-    .nav-menu {
-        display: none;
-    }
 
-
-}
 
 /* End Navbar */
 
@@ -169,7 +239,7 @@ a {
     }
 
     .home-page-text {
-        padding-top: 10%;
+        padding-top: 20%;
     }
 
 }
@@ -180,7 +250,7 @@ a {
     }
 
     .home-page-text {
-        padding-top: 10%;
+        padding-top: 20%;
     }
 
     .home-title1 {
@@ -789,7 +859,7 @@ ul {
 }
 
 .container-contact-form {
-    height: 550px;
+    height: auto;
     width: 700px;
 
     position: relative;
@@ -839,7 +909,7 @@ input[type=submit] {
 }
 
 label {
-    padding: 1% 0;
+    margin: 1% 0;
     font-family: var(--montserrat);
     color: #FFF;
 }
@@ -847,6 +917,11 @@ label {
 #subject {
     margin-bottom: 15px;
 }
+
+.lineheight-contact {
+    line-height: 30px;
+}
+
 
 
 @media(max-width: 1200px) {
@@ -876,7 +951,7 @@ label {
 /* End Contact Form Screen */
 
 /* Start Footer */
-    
+
 /* End Footer */
 
 
@@ -910,6 +985,7 @@ label {
     left: 0px;
     float: left;
 }
+
 .editorial-fixed-end {
     display: block;
     width: 100%;
