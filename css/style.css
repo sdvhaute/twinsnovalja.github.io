@@ -4,6 +4,46 @@
 /* CSS variables */
 @import url(partials/var.css);
 
+
+/* CSS Variables */
+:root {
+    --color1: #DEEAF6;
+    --color1b: #deeaf6ea;
+    --color2: #93B1C5;
+    --color2b: #93b1c5e2;
+    --color3: #737280;
+    --color4: #3D462F;
+    --color5: #D8840F;
+
+    --color6: #8ecae6;
+    --color7: #219ebc;
+    --color8: #023047;
+    --color9: #ffb703;
+    --color9b: #ffb700;
+    --color10: #fb8500;
+    --color11: #ffbf69;
+
+    --colortext: #1d3557;
+    --colortext2: #fff;
+
+    --bgcolor1:#DEEAF6;
+    --bgcolor2:#b6cfea;
+    --bgcolor3:#8ca9ca;
+
+
+    --roboto: 'Roboto', sans-serif;
+    --shadows: 'Shadows Into Light', cursive;
+    --handlee: 'Handlee', cursive;
+    --montserrat: 'Montserrat', sans-serif;
+    --montserratbold:'Montserrat', bold;
+    --montserratsubrayada: 'Montserrat Subrayada', sans-serif;
+    --kdam: 'Kdam Thmor Pro', sans-serif;
+    --raleway:'Raleway', sans-serif;
+    --homemade: 'Homemade Apple', cursive;
+    --neucha:  'Neucha', cursive;
+
+} 
+
 *,
 html,
 body {
