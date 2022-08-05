@@ -18,45 +18,95 @@ navArrow.addEventListener('click', () => {
 
 // Gallery Carousel
 
-const arrowLefts = document.querySelectorAll('.arrow-left');
-const arrowRights = document.querySelectorAll('.arrow-right');
+const prevButton = document.querySelector('.left-button')
+const nextButton = document.querySelector('.right-button')
 
-const galleryItems = document.querySelectorAll('.gallery-items');
+const carouselLeft = document.querySelector('.carousel-left');
+const carouselMiddle = document.querySelector('.carousel-middle');
+const carouselRight = document.querySelector('.carousel-right');
 
-let currentIndex = 0;
-let nextIndex = currentIndex + 1;
-let prevIndex = currentIndex - 1;
+const imagesLeft = carouselLeft.querySelectorAll('.images');
+const imagesMiddle = carouselMiddle.querySelectorAll('.images');
+const imagesRight = carouselRight.querySelectorAll('.images');
 
-arrowRights.forEach((arrowRight) => {
-    arrowRight.addEventListener('click', () => {
-        arrowRight.parentElement.children[0].children[currentIndex].classList.remove('gallery-active');
-        arrowRight.parentElement.children[0].children[nextIndex].classList.add('gallery-active');
 
-        prevIndex = currentIndex;
-        currentIndex = nextIndex;
-        if (nextIndex === arrowRight.parentElement.children[0].children.length - 1) {
-            nextIndex = 0;
+
+const lengthImages = carouselMiddle.querySelectorAll('.images').length - 1;
+
+let activeSlideIndex = 0
+
+let prevSlide = lengthImages;
+let nextSlide = activeSlideIndex + 1;
+
+
+nextButton.addEventListener('click', () => {
+    if (lengthImages === activeSlideIndex) {
+        activeSlideIndex = 0;
+    } else {
+        activeSlideIndex++;
+    }
+    if (lengthImages === prevSlide) {
+        prevSlide = 0;
+    } else {
+        prevSlide++;
+    }
+    if (lengthImages === nextSlide) {
+        nextSlide = 0;
+    } else {
+        nextSlide++;
+    }
+
+    pickImage();
+})
+prevButton.addEventListener('click', () => {
+    if (activeSlideIndex === 0) {
+        activeSlideIndex = lengthImages;
+    } else {
+        activeSlideIndex--;
+    }
+    if (prevSlide === 0) {
+        prevSlide = lengthImages;
+    } else {
+        prevSlide--;
+    }
+    if (nextSlide === 0) {
+        nextSlide = lengthImages;
+    } else {
+        nextSlide--;
+    }
+
+    pickImage();
+})
+
+function pickImage() {
+
+
+
+    imagesMiddle.forEach((image, imgIndex) => {
+        if (imgIndex === activeSlideIndex) {
+            image.classList.remove('img-hidden');
         } else {
-            nextIndex = currentIndex + 1;
+            image.classList.add('img-hidden');
         }
     })
-})
-arrowLefts.forEach((arrowLeft) => {
-    arrowLeft.addEventListener('click', () => {
-        arrowLeft.parentElement.children[0].children[currentIndex].classList.remove('gallery-active');
-        arrowLeft.parentElement.children[0].children[prevIndex].classList.add('gallery-active');
-
-        nextIndex = currentIndex;
-        currentIndex = prevIndex;
-        if (prevIndex === 0) {
-            prevIndex = arrowLeft.parentElement.children[0].children.length - 1;
+    imagesLeft.forEach((image, imgIndex) => {
+        if (imgIndex === prevSlide) {
+            image.classList.remove('img-hidden');
         } else {
-            prevIndex = currentIndex - 1;
+            image.classList.add('img-hidden');
         }
     })
-})
+    imagesRight.forEach((image, imgIndex) => {
+        if (imgIndex === nextSlide) {
+            image.classList.remove('img-hidden');
+        } else {
+            image.classList.add('img-hidden');
+        }
+    })
+    
+}
 
 
-// Scroll to top
+// // Scroll to top
 
 const toTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });

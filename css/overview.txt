@@ -5,3 +5,111 @@
   <div id="concept" class="screen-concept">
 
    <div id="gallery" class="gallery-screen">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Old about section 
+
+<div id="about" class="screen-about">
+            <h1 id="about-h1" class="title-class">Luxury residences at the heart of Pag</h1>
+
+            <div class="screen-about-column">
+
+                <div class="screen-about-row">
+
+                    <!-- <div class="about-row-item">
+                        <img id="imgabout1" src="img/imgnovhousenight.jpg" alt="">
+                    </div> -->
+                    <div class="about-row-item about-row-item-1">
+
+                        <span id="about-span1" class="about-span">Discover peace, comfort and quiet at the heart of
+                            beautiful Novalja with a stay at our Twins residences. Freshly <span class="selected">
+                                renovated in 2022</span>, the Twins
+                            houses facilitate all the Croatian sun has to offer from dusk till dawn. Get carried away by
+                            the rhythm of the tides and enjoy the Dalmatians like never before!
+                        </span>
+                    </div>
+
+                </div>
+                <div class="screen-about-row">
+
+                    <div class="about-row-item">
+                        <span id="about-span2" class="about-span">The Twins houses are located on <span
+                                class="selected">the island of Pag, at
+                                the sea town of Novalja.</span> Part of the numerous Dalmatian islands of the Croatian
+                            cost, Pag -
+                            known best for its Paski Sir cheese and its millenium old olive trees - breaths history and
+                            culture.
+                        </span>
+                    </div>
+                    <div class="about-row-item">
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11226.207255372185!2d14.870376812988285!3d44.558188974410285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47624bcd2733f731%3A0x1b338b4e6fa55dda!2sUl.%20Punta%20Mira%2C%20Novalja%2C%20Kroati%C3%AB!5e0!3m2!1snl!2snl!4v1655375121713!5m2!1snl!2snl"
+                            width="750" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="screen-about-row">
+                    <div class="about-row-item">
+                        <div class="about-img"></div>
+                    </div>
+                    <div class="about-row-item">
+                        <span id="about-span2" class="about-span">
+                            Unlike the vast remoteness of the rest of the island, Novalja is <span class="selected">a
+                                bustling little town the whole year round </span>with
+                            a beautiful promenade by the sea, offering excellent dining options at sunset. After closing
+                            hours, the city center provides fun and enjoyment to young and old, wanting to spend the
+                            night out at Zrce Beach. </span>
+                    </div>
+
+                </div>
+                <div class="screen-about-row">
+
+                    <div class="about-row-item about-row-item-1">
+                        <span id="about-span2" class="about-span">
+
+                            At the end of a crossroad on a quiet street (Punta Mira = Peace Point), our residences grant
+                            <span class="selected">proximity to all the necessary amenities</span> of a comfortable
+                            stay, without compromising on
+                            <span class="selected">privacy and peace</span>. Therefore, Twins Novalja really embodies
+                            the idea of offering you the
+                            best of both worlds: ease and calm!</span>
+                    </div>
+                    <!-- <div class="about-row-item">
+
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        #nav-book {
+    background-color: var(--color9);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+#nav-book:hover {
+    background-color: var(--bgcolor4);
+}
