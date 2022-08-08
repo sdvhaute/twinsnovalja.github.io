@@ -1,3 +1,57 @@
+// Change Language
+
+
+const languageChoice = document.querySelector('#language-options');
+const enTexts = document.querySelectorAll('.en');
+const nlTexts = document.querySelectorAll('.nl');
+const frTexts = document.querySelectorAll('.fr');
+
+chooseLanguage();
+
+function chooseLanguage() {
+
+    if (languageChoice.value === "en") {
+
+        enTexts.forEach(enText => {
+            enText.classList.remove('hide-language');
+        })
+        nlTexts.forEach(nlText => {
+            nlText.classList.add('hide-language');
+        })
+        frTexts.forEach(frText => {
+            frText.classList.add('hide-language');
+        })
+
+    } else if (languageChoice.value === "nl") {
+
+        enTexts.forEach(enText => {
+            enText.classList.add('hide-language');
+        })
+        nlTexts.forEach(nlText => {
+            nlText.classList.remove('hide-language');
+        })
+        frTexts.forEach(frText => {
+            frText.classList.add('hide-language');
+        })
+
+    } else if (languageChoice.value === "fr") {
+
+        enTexts.forEach(enText => {
+            enText.classList.add('hide-language');
+        })
+        nlTexts.forEach(nlText => {
+            nlText.classList.add('hide-language');
+        })
+        frTexts.forEach(frText => {
+            frText.classList.remove('hide-language');
+        })
+
+    }
+}
+
+
+
+
 // Navbar
 
 const nav = document.querySelector('.nav');
@@ -79,9 +133,6 @@ prevButton.addEventListener('click', () => {
 })
 
 function pickImage() {
-
-
-
     imagesMiddle.forEach((image, imgIndex) => {
         if (imgIndex === activeSlideIndex) {
             image.classList.remove('img-hidden');
@@ -103,8 +154,21 @@ function pickImage() {
             image.classList.add('img-hidden');
         }
     })
-    
+
 }
+// Magnifying button
+const magnPluss = carouselMiddle.querySelectorAll('.fa-magnifying-glass-plus');
+
+magnPluss.forEach(magnPlus => {
+    magnPlus.addEventListener('click', () => {
+        // magnPlus.parentElement.parentElement.style.transform = 'translate(-50%, -50%) scale(1.3)'
+        magnPlus.parentElement.parentElement.classList.toggle('scale-up');
+        magnPluss.forEach(magnPlus => {
+            magnPlus.classList.toggle('fa-magnifying-glass-plus');
+            magnPlus.classList.toggle('fa-magnifying-glass-minus');
+        })
+    })
+})
 
 
 // // Scroll to top
